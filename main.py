@@ -2,7 +2,7 @@
 def find_anagrams():
     # [assignment] Add your code here
     string1 = input("Type in a word of your choice: ")
-    string2 = input("Type in a word of your choice: ")
+    string2 = input("Type in the 2nd word of your choice: ")
     
     #convert both strings to similar case(uppercase)
     string1 = string1.upper()
@@ -13,16 +13,15 @@ def find_anagrams():
         
         #sort both strings
         if sorted(string1) == sorted(string2):
-            print("True")
+           return True
         else:
-            print("False")
+            return False
         
     else: 
-        print("False")
+        return False
         
 
     
 find_anagrams()    
     
     
-
